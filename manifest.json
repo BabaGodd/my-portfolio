@@ -1,0 +1,24 @@
+{
+  "name": "KyKal Technologies | Jeffrey Anamoo",
+  "short_name": "KyKal",
+  "description": "KyKal Technologies — Jeffrey Anamoo, Full Stack Software Engineer building modern digital products, business systems, dashboards and web experiences.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05070d",
+  "theme_color": "#05070d",
+  "icons": [
+    {
+      "src": "icon/JBA-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon/JBA-logo2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

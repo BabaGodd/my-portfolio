@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05070d">
+  <title>Curriculum Vitae | Jeffrey Anamoo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon/JBA-logo.png">
+  <link rel="apple-touch-icon" href="icon/JBA-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; }
+    .cv-bar { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px; background: rgba(5,7,13,.92); border-bottom: 1px solid var(--line); }
+    .cv-bar .button { width: auto; white-space: nowrap; }
+    .cv-bar-title { font: 10px "DM Mono", monospace; letter-spacing: .14em; color: var(--cyan); text-align: center; flex: 1; }
+    .cv-viewer { flex: 1 1 auto; min-height: 0; }
+    .cv-viewer object { display: block; width: 100%; height: 100%; border: 0; background: #0c111c; }
+    .cv-fallback { display: grid; gap: 16px; place-content: center; justify-items: center; height: 100%; padding: 30px; text-align: center; color: var(--muted); font-size: 14px; }
+    @media (max-width: 720px) {
+      .cv-bar { padding: 10px 12px; }
+      .cv-bar-title { display: none; }
+      .cv-bar .button { padding: 12px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="cv-bar">
+    <a class="button button-ghost" href="index.html">← Back to home</a>
+    <span class="cv-bar-title">CURRICULUM VITAE / JEFFREY ANAMOO</span>
+    <a class="button button-primary" href="documents/Jeffrey-Anamoo-CV.pdf" download="Jeffrey-Anamoo-CV.pdf">Download CV <span>↓</span></a>
+  </header>
+
+  <main class="cv-viewer">
+    <object data="documents/Jeffrey-Anamoo-CV.pdf" type="application/pdf" aria-label="Jeffrey Anamoo CV">
+      <div class="cv-fallback">
+        <p>Your browser can't show the CV here. You can open it in a new tab or download it instead.</p>
+        <a class="button button-ghost" href="documents/Jeffrey-Anamoo-CV.pdf" target="_blank" rel="noopener">Open CV in a new tab <span>↗</span></a>
+      </div>
+    </object>
+  </main>
+</body>
+</html>
