@@ -16,6 +16,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    .tech-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+    .tech-group{padding:30px;border:1px solid var(--line);border-radius:var(--radius);background:#090e17}
+    .tech-group-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+    .tech-group-head h3{font:10px "DM Mono",monospace;letter-spacing:.16em;color:var(--cyan);font-weight:400}
+    .tech-group-head span{font:8px "DM Mono",monospace;color:#4d5b6e}
+    .tech-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:12px}
+    .tech-item{display:grid;justify-items:center;gap:14px;padding:22px 8px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.015);transition:transform .25s,border-color .25s,background .25s}
+    .tech-item:hover{transform:translateY(-4px);border-color:rgba(77,231,255,.35);background:rgba(77,231,255,.04)}
+    .tech-item i{font-size:42px;line-height:1;color:var(--c,#f4f7fb);transition:transform .25s}
+    .tech-item:hover i{transform:scale(1.1)}
+    .tech-item span{font:9px "DM Mono",monospace;letter-spacing:.06em;color:#a4b0c0;text-align:center}
+    @media(max-width:1050px){.tech-groups{grid-template-columns:1fr}}
+    @media(max-width:720px){.tech-group{padding:22px}.tech-list{grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:10px}.tech-item i{font-size:36px}}
+  </style>
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -46,9 +62,8 @@
       </button>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#stack">Stack</a>
+        <a href="#services">Services</a>
         <a href="#work">Work</a>
-        <a href="#process">Process</a>
         <a href="#education">Journey</a>
         <a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
       </div>
@@ -67,7 +82,7 @@
           <a href="#contact" class="button button-ghost">Start a conversation</a>
         </div>
         <div class="hero-meta">
-          <div><strong class="counter" data-target="2">0</strong><span>Selected<br>Projects</span></div>
+          <div><strong class="counter" data-target="4">0</strong><span>Selected<br>Projects</span></div>
           <div><strong>FULL<br>STACK</strong><span>Engineering<br>& Development</span></div>
           <div><strong>WEB</strong><span>Digital<br>Solutions</span></div>
         </div>
@@ -128,17 +143,17 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="stack">
+    <section class="section section-alt" id="services">
       <div class="container">
-        <div class="section-heading reveal"><span class="section-number">02</span><div><p class="section-label">TECHNICAL STACK</p><h2>The tools behind the <em>work.</em></h2></div></div>
+        <div class="section-heading reveal"><span class="section-number">02</span><div><p class="section-label">SERVICES</p><h2>What I can build <em>for you.</em></h2></div></div>
         <div class="skills-grid">
-          <article class="skill-card reveal" data-tilt><span class="skill-index">01</span><div class="skill-icon">&lt;/&gt;</div><h3>Frontend</h3><p>Responsive interfaces with strong hierarchy, accessibility and polished interaction.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></article>
-          <article class="skill-card reveal" data-tilt><span class="skill-index">02</span><div class="skill-icon">{ }</div><h3>Backend</h3><p>Application logic, APIs, authentication and data-driven application workflows.</p><div class="tags"><span>Python</span><span>Node.js</span><span>REST APIs</span></div></article>
-          <article class="skill-card reveal" data-tilt><span class="skill-index">03</span><div class="skill-icon">DB</div><h3>Data & Systems</h3><p>Structured data and practical architecture for products that need dependable information flow.</p><div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span></div></article>
-          <article class="skill-card reveal" data-tilt><span class="skill-index">04</span><div class="skill-icon">↗</div><h3>Deployment</h3><p>Modern development workflows that take projects from local development to production.</p><div class="tags"><span>Git</span><span>GitHub</span><span>Vercel</span><span>Netlify</span></div></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-index">01</span><div class="skill-icon">$</div><h3>E-commerce Websites</h3><p>Online stores with product catalogues, cart, wishlist, checkout and payment workflows.</p><div class="tags"><span>Product Catalogue</span><span>Cart &amp; Checkout</span><span>Payments</span></div></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-index">02</span><div class="skill-icon">&lt;/&gt;</div><h3>Business Websites</h3><p>Fast, responsive websites that build trust for companies, law firms, schools and organisations.</p><div class="tags"><span>Company Sites</span><span>Landing Pages</span><span>Portfolios</span></div></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-index">03</span><div class="skill-icon">DB</div><h3>Dashboards &amp; Admin Systems</h3><p>Operational dashboards and admin panels that turn data into clear, usable views.</p><div class="tags"><span>Dashboards</span><span>Admin Systems</span><span>Reporting</span></div></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-index">04</span><div class="skill-icon">{ }</div><h3>Web Apps &amp; Portals</h3><p>Custom web applications with logins, user roles and workflows, such as school and operations portals.</p><div class="tags"><span>Authentication</span><span>User Roles</span><span>API Integration</span></div></article>
         </div>
         <div class="stack-cloud reveal">
-          <span>Responsive Design</span><span>UI/UX</span><span>Authentication</span><span>Dashboards</span><span>Local Storage</span><span>Payment Workflows</span><span>Admin Systems</span><span>API Integration</span>
+          <span>Website Redesign</span><span>Responsive Design</span><span>UI/UX</span><span>Payment Workflows</span><span>API Integration</span><span>Hosting &amp; Deployment</span>
         </div>
       </div>
     </section>
@@ -153,14 +168,23 @@
             <a class="project-shot" href="https://kathy-designs.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Kathy Fashion live site"><img src="images/kathy-fashion.png" alt="Screenshot of the Kathy Fashion website" loading="lazy" onerror="this.parentNode.remove()"></a>
             <span class="project-badge">FEATURED / E-COMMERCE</span>
           </div>
-          <div class="project-info"><span class="project-number">01 / 02</span><h3>Kathy Fashion</h3><p>Modern fashion e-commerce experience with product browsing, cart, wishlist, checkout workflows and administration.</p><div class="project-tags"><span>E-commerce</span><span>JavaScript</span><span>UI/UX</span></div><div class="project-links"><a href="#case-fashion" class="project-link">View case study <span>↗</span></a><a href="https://kathy-designs.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit live site <span>↗</span></a></div></div>
+          <div class="project-info"><span class="project-number">01 / 04</span><h3>Kathy Fashion</h3><p>Modern fashion e-commerce experience with product browsing, cart, wishlist, checkout workflows and administration.</p><div class="project-tags"><span>E-commerce</span><span>JavaScript</span><span>UI/UX</span></div><div class="project-links"><a href="#case-fashion" class="project-link">View case study <span>↗</span></a><a href="https://kathy-designs.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit live site <span>↗</span></a></div></div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-visual project-school"><div class="dashboard-bars"><i></i><i></i><i></i><i></i></div><div class="dashboard-window"><span>STUDENT PERFORMANCE</span><strong>94.8%</strong><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><a class="project-shot" href="https://eastgateacademy.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Eastgate Academy live site"><img src="images/eastgate-academy.png" alt="Screenshot of the Eastgate Academy website" loading="lazy" onerror="this.parentNode.remove()"></a><span class="project-badge">EDUCATION / SYSTEM</span></div>
+          <div class="project-info"><span class="project-number">02 / 04</span><h3>Eastgate Academy</h3><p>Digital platform combining a school website with parent, teacher and administration workflows.</p><div class="project-tags"><span>Education</span><span>Dashboard</span><span>Web App</span></div><div class="project-links"><a href="#case-school" class="project-link">View case study <span>↗</span></a><a href="https://eastgateacademy.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit live site <span>↗</span></a></div></div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-visual project-marpol"><div class="radar"></div><div class="radar-line"></div><span class="radar-label label-a">VESSEL 04</span><span class="radar-label label-b">PORT OPS</span><span class="radar-label label-c">MARPOL</span><a class="project-shot" href="https://seagridmaritime.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the MARPOL Operations Dashboard live site"><img src="images/marpol-dashboard.png" alt="Screenshot of the MARPOL Operations Dashboard" loading="lazy" onerror="this.parentNode.remove()"></a><span class="project-badge">MARITIME / OPERATIONS</span></div>
+          <div class="project-info"><span class="project-number">03 / 04</span><h3>MARPOL Operations Dashboard</h3><p>Operational interface concept for monitoring maritime environmental workflows, vessels and port operations.</p><div class="project-tags"><span>Maritime</span><span>Operations</span><span>Dashboard</span></div><div class="project-links"><a href="#case-marpol" class="project-link">View case study <span>↗</span></a><a href="https://seagridmaritime.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit live site <span>↗</span></a></div></div>
         </article>
 
         <article class="project-card project-large reveal" data-tilt>
-          <div class="project-visual project-school"><div class="dashboard-bars"><i></i><i></i><i></i><i></i></div><div class="dashboard-window"><span>STUDENT PERFORMANCE</span><strong>94.8%</strong><div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><a class="project-shot" href="https://eastgateacademy.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Eastgate Academy live site"><img src="images/eastgate-academy.png" alt="Screenshot of the Eastgate Academy website" loading="lazy" onerror="this.parentNode.remove()"></a><span class="project-badge">EDUCATION / SYSTEM</span></div>
-          <div class="project-info"><span class="project-number">02 / 02</span><h3>Eastgate Academy</h3><p>Digital platform combining a school website with parent, teacher and administration workflows.</p><div class="project-tags"><span>Education</span><span>Dashboard</span><span>Web App</span></div><div class="project-links"><a href="#case-school" class="project-link">View case study <span>↗</span></a><a href="https://eastgateacademy.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit live site <span>↗</span></a></div></div>
+          <div class="project-visual project-law"><div class="law-page"><span>LAW FIRM</span><hr><strong>JUSTICE.<br>INTEGRITY.<br>RESULTS.</strong><small>LEGAL EXCELLENCE</small></div><a class="project-shot" href="https://talklawassociates.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Law Firm live site"><img src="images/law-firm.png" alt="Screenshot of the Law Firm website" loading="lazy" onerror="this.parentNode.remove()"></a><span class="project-badge">CORPORATE / WEB</span></div>
+          <div class="project-info"><span class="project-number">04 / 04</span><h3>Law Firm Website</h3><p>Professional digital presence designed around trust, clarity, authority and a strong user journey.</p><div class="project-tags"><span>Corporate</span><span>Web Design</span></div><div class="project-links"><a href="#contact" class="project-link">Discuss a similar build <span>↗</span></a><a href="https://talklawassociates.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Visit live site <span>↗</span></a></div></div>
         </article>
-
       </div>
     </section>
 
@@ -176,40 +200,32 @@
           <div class="case-number">02</div><div><p class="case-label">EDUCATION / EASTGATE ACADEMY</p><h3>Connecting the public website with the people who run the school.</h3><p class="case-copy">The concept extends beyond a school website into role-based workflows for parents, teachers and administrators.</p><div class="system-flow"><span>PUBLIC WEBSITE</span><i>→</i><span>PARENT PORTAL</span><i>→</i><span>TEACHER PORTAL</span><i>→</i><span>ADMIN</span></div></div>
         </article>
 
-      </div>
-    </section>
+        <article class="case-study reveal" id="case-marpol">
+          <div class="case-number">03</div><div><p class="case-label">MARITIME / OPERATIONS</p><h3>Making operational information easier to see, understand and act on.</h3><p class="case-copy">The dashboard direction uses data visualisation, status indicators and operational views to turn complex maritime information into a clearer working interface.</p><div class="case-columns"><div><b>FOCUS</b><span>Visibility, monitoring and operational decision support.</span></div><div><b>INTERFACE</b><span>Dashboard cards, radar-style visualisation and status states.</span></div><div><b>DESIGN</b><span>High-contrast information architecture for operational use.</span></div></div></div>
+        </article>
 
-    <section class="section container" id="process">
-      <div class="section-heading reveal"><span class="section-number">05</span><div><p class="section-label">ENGINEERING PROCESS</p><h2>From idea to <em>impact.</em></h2></div></div>
-      <div class="process-grid">
-        <article class="process-step reveal"><span>01</span><h3>Discover</h3><p>Understand the business, users, requirements and the problem worth solving.</p></article>
-        <article class="process-step reveal"><span>02</span><h3>Design</h3><p>Shape the user experience, information architecture and technical direction.</p></article>
-        <article class="process-step reveal"><span>03</span><h3>Develop</h3><p>Turn the approved direction into clean, responsive and functional software.</p></article>
-        <article class="process-step reveal"><span>04</span><h3>Test</h3><p>Validate behaviour, responsiveness, usability and the details that affect quality.</p></article>
-        <article class="process-step reveal"><span>05</span><h3>Deploy</h3><p>Move the product into production and establish a workflow for continued improvement.</p></article>
       </div>
     </section>
 
     <section class="section section-alt" id="education">
       <div class="container">
-        <div class="section-heading reveal"><span class="section-number">06</span><div><p class="section-label">EDUCATION & JOURNEY</p><h2>The foundation behind the <em>engineer.</em></h2></div></div>
+        <div class="section-heading reveal"><span class="section-number">05</span><div><p class="section-label">EDUCATION & JOURNEY</p><h2>The foundation behind the <em>engineer.</em></h2></div></div>
         <div class="timeline">
           <article class="timeline-item reveal"><div class="timeline-date">CURRENT</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Freelance Full Stack Software Engineer</h3><p class="timeline-company">KYKAL TECHNOLOGIES</p><p>Designing and developing websites, business applications, dashboards and custom digital solutions.</p></div></article>
           <article class="timeline-item reveal"><div class="timeline-date">DEGREE</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Degree in ICT</h3><p class="timeline-company">INFORMATION & COMMUNICATION TECHNOLOGY</p><p>Academic foundation in information technology and digital systems.</p></div></article>
           <article class="timeline-item reveal"><div class="timeline-date">DIPLOMA</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Advanced Diploma in Software Engineering</h3><p class="timeline-company">SOFTWARE ENGINEERING</p><p>Focused training in software development and engineering practice.</p></div></article>
           <article class="timeline-item reveal"><div class="timeline-date">EDUCATION</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Brooke College, East London</h3><p class="timeline-company">PHYSICS</p><p>Further academic study in Physics.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">SECONDARY</div><div class="timeline-marker"></div><div class="timeline-content"><h3>Kingsford Community School, London</h3><p class="timeline-company">SECONDARY EDUCATION</p><p>Secondary education in London.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section container why-section" id="why">
-      <div class="section-heading reveal"><span class="section-number">07</span><div><p class="section-label">WHY KYKAL</p><h2>Built around the <em>business.</em></h2></div></div>
-      <div class="why-grid">
-        <article class="why-card reveal"><span>01</span><h3>Business First</h3><p>Technology should solve a real problem, not simply add complexity.</p></article>
-        <article class="why-card reveal"><span>02</span><h3>Modern Design</h3><p>Interfaces should feel considered, clear and as good as they function.</p></article>
-        <article class="why-card reveal"><span>03</span><h3>Engineered to Grow</h3><p>Build decisions should leave room for the product and business to evolve.</p></article>
-        <article class="why-card reveal"><span>04</span><h3>Client Focused</h3><p>Every solution starts with understanding the people and workflow behind it.</p></article>
+    <section class="section container tech-section" id="tech">
+      <div class="section-heading reveal"><span class="section-number">06</span><div><p class="section-label">TECH STACK</p><h2>Technologies I <em>work with.</em></h2></div></div>
+      <div class="tech-groups">
+        <article class="tech-group reveal"><div class="tech-group-head"><h3>FRONTEND</h3><span>01</span></div><div class="tech-list"><div class="tech-item" style="--c:#e54d26"><i class="devicon-html5-plain" aria-hidden="true"></i><span>HTML5</span></div><div class="tech-item" style="--c:#3d8fc6"><i class="devicon-css3-plain" aria-hidden="true"></i><span>CSS3</span></div><div class="tech-item" style="--c:#f0db4f"><i class="devicon-javascript-plain" aria-hidden="true"></i><span>JavaScript</span></div></div></article>
+        <article class="tech-group reveal"><div class="tech-group-head"><h3>LANGUAGES &amp; BACKEND</h3><span>02</span></div><div class="tech-list"><div class="tech-item" style="--c:#ffd845"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></div><div class="tech-item" style="--c:#ea2d2e"><i class="devicon-java-plain" aria-hidden="true"></i><span>Java</span></div><div class="tech-item" style="--c:#659ad2"><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span>C++</span></div><div class="tech-item" style="--c:#5fa04e"><i class="devicon-nodejs-plain" aria-hidden="true"></i><span>Node.js</span></div></div></article>
+        <article class="tech-group reveal"><div class="tech-group-head"><h3>DATABASES</h3><span>03</span></div><div class="tech-list"><div class="tech-item" style="--c:#5b8fc7"><i class="devicon-postgresql-plain" aria-hidden="true"></i><span>PostgreSQL</span></div><div class="tech-item" style="--c:#2ba3c9"><i class="devicon-mysql-plain" aria-hidden="true"></i><span>MySQL</span></div><div class="tech-item" style="--c:#3ecf8e"><i class="devicon-supabase-plain" aria-hidden="true"></i><span>Supabase</span></div></div></article>
+        <article class="tech-group reveal"><div class="tech-group-head"><h3>TOOLS &amp; DEPLOYMENT</h3><span>04</span></div><div class="tech-list"><div class="tech-item" style="--c:#f34f29"><i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span></div><div class="tech-item" style="--c:#f4f7fb"><i class="devicon-github-original" aria-hidden="true"></i><span>GitHub</span></div><div class="tech-item" style="--c:#05bdba"><i class="devicon-netlify-plain" aria-hidden="true"></i><span>Netlify</span></div><div class="tech-item" style="--c:#f4f7fb"><i class="devicon-vercel-original" aria-hidden="true"></i><span>Vercel</span></div></div></article>
       </div>
     </section>
 
@@ -227,7 +243,7 @@
 
     <section class="contact-section" id="contact">
       <div class="container contact-inner reveal">
-        <p class="section-label">08 / LET'S BUILD</p>
+        <p class="section-label">07 / LET'S BUILD</p>
         <h2>Have an idea?<br><em>Let's upgrade it.</em></h2>
         <p class="contact-copy">Tell me what you're trying to build, improve or automate. We'll turn the idea into a clear digital direction.</p>
         <div class="contact-links">
